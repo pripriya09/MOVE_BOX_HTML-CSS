@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.speedbox{
+    width: 100px;
+    height: 100px;
+    background-color :coral;
+    border-radius: 10px;
+    margin-top: 30px;
+    animation: speed 3s  ease-in infinite;
+    position: relative;
+}
+ 
+@keyframes speed{
+    form{
+        background-color :green; 
+        position: absolute;
+        right: 1200px;
+        top: 0;
+    }
+    to{
+        background-color :blue;
+        position: absolute;
+        left: 1200px;
+        top: 0;
+    }
+
+}
+

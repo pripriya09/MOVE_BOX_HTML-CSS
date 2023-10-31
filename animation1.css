@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 15px;
+    margin-top: 100px;
+    animation: change 4s ease-in-out infinite;
+    position: relative;
+}
+@keyframes change{
+    0%{
+        background-color: green;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    25%{
+        background-color: pink;
+        top: 0;
+        left: 700px;
+    }
+    50%{
+        background-color: blue;
+        position: absolute;
+        left: 700px;
+        top: 500px; 
+    }
+    75%{
+          
+        background-color: maroon;
+        position: absolute;
+        left: 0px;
+        top:500px ;
+    }
+    100%{
+        background-color: black;
+        position: absolute;
+        top:0px; 
+        left: 0; 
+    }
+}
